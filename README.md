@@ -18,7 +18,7 @@ Further Questions:
 
 I do all of the work in jupyter notebooks which are uploaded here.
 
-### Scrape NHL Lineups
+### [Scrape NHL Lineups](https://github.com/kjgraves/NHLShakeItUp/blob/master/Scrape/ScrapeNHLLineups.ipynb)
 
 This notebook shows how I gather the lineups for this project.
 
