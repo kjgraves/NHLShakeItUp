@@ -28,11 +28,11 @@ I do all of the work in jupyter notebooks which are uploaded here.
 
 This notebook shows how I gather the lineups for this project. 
 
-### Scrape Additional Data (in progress)
+### [Scrape Additional Data](https://github.com/kjgraves/NHLShakeItUp/blob/master/Scrape/ScrapeAdditionalData.ipynb) (in progress)
 
 This (rather large) notebook shows how I gather all additional features (besides the actual dates and lineups).
-
 So far, these are the data/features I have scraped and where I got the data:
+
 -----
 https://www.hockey-reference.com
 * Scores 
@@ -41,12 +41,12 @@ https://www.hockey-reference.com
 * +/- of players for each game
 * 
 ----
-nhl.com/stats
+https://www.nhl.com/stats
 * Used as ground truth for attempting to correct for lineup mistakes
 
 *The later half (concerning the handling of messy data) of this notebook is still very much in progress*
 
-### Feature Creation (in progress)
+### [Feature Creation](https://github.com/kjgraves/NHLShakeItUp/blob/master/FeatureCreation.ipynb) (in progress)
 
 Much of the data gathered directly from scraping is not in a useful form. In this notebook, I do some more data wrangling to build all of the appropriate features.
 
@@ -58,7 +58,7 @@ List of Features:
 * Number of games played recently (e.g. played last night, number in last 3,5,7 days?)
 * Others?
 
-### Data Exploration (in progress)
+### [Data Exploration](https://github.com/kjgraves/NHLShakeItUp/blob/master/DataExploration.ipynb) (in progress)
 
 Finally!! We can actually look at the data now, and try to make some sense of it. Before I dive into any predictive analysis, I need to answer some of the basic questions:
 1. On average, does 'shaking it up' work?
