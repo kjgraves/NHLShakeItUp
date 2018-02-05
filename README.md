@@ -1,5 +1,6 @@
 # NHL 'Shake It Up'
 
+
 The goal of this project is to answer the questions:
 1. Does 'shaking up the lines' help an NHL team to win or to generate more scoring
 2. When should a team 'shake it up?'
@@ -9,16 +10,13 @@ The goal of this project is to answer the questions:
 
 ## Organization
 
-I have done (am doing) all the work on this project in Jupyter notebooks which I will upload them here as I complete them. This readme file describes each of these notebooks, and provides links to each one for easy movement between files. I include a top-level description of the project on my website (link to come soon - once I finish the project), if you don't want all of the gritty details.
+I have done (am doing) all the work on this project in Jupyter notebooks which I upload them here as I complete them. This readme file describes each of these notebooks, and provides links to each one for easy movement between files. I include a top-level description of the project on my website (link to come soon - once the project is farther along), if you don't want all of the gritty details.
 
-## What Does 'Shaking it Up' Mean??
+## What Does 'Shaking It Up' Mean??
 
-Unfortunately, 'shaking it up' is not a well defined term. I haven't researched into it too much, but I would guess that most news stories that discuss a team 'shaking up the lines' refers to at least one of the top two lines changing (probably both).
+Unfortunately, 'shaking it up' is not a well defined term. I seems that most news stories that discuss a team 'shaking up the lines' refers to at least one of the top two lines changing (probably both). For the purposes of this investigation, I will keep it as simple as possible. I define "shaking it up" as **a change to the top line that is not due to injury.**
 
-Further Questions:
-* Does it include the defensive pairs?
-* What about injuries? Surely teams play worse on average if one of their players on their top two lines is injured. (I will probably have to filter games following injuries out)
-
+Surely teams play worse on average if one of their players on their top line is injured. I consider an injury where the player is not a part of the lineup, which for all intents and purposes is the same (since first line players aren't usually healthy scratches or send down to the AHL).
 
 ## Description of Notebooks
 
@@ -26,7 +24,7 @@ I do all of the work in jupyter notebooks which are uploaded here.
 
 ### [Scrape Lineups](https://github.com/kjgraves/NHLShakeItUp/blob/master/Scrape/ScrapeNHLLineups.ipynb)
 
-This notebook shows how I gather the lineups for this project. 
+This notebook shows how I gather the lineups for this project. I scrape all of the lineup data from https://www.rotogrinders.com, a daily fantasy sports website. I use rotogrinders, because many other websites (e.g. https://www.nhl.com/stats, https://www.hockey-reference.com) do not list starting lineups in their stats (at least, not where I could find).
 
 ### [Scrape Additional Data](https://github.com/kjgraves/NHLShakeItUp/blob/master/Scrape/ScrapeAdditionalData.ipynb) (in progress)
 
@@ -42,7 +40,7 @@ https://www.hockey-reference.com
 * 
 ----
 https://www.nhl.com/stats
-* Used as ground truth for attempting to correct for lineup mistakes
+* Used as ground truth for attempting to correct for lineup mistakes on rotogrinders
 
 *The later half (concerning the handling of messy data) of this notebook is still very much in progress*
 
@@ -61,14 +59,18 @@ List of Features:
 ### [Data Exploration](https://github.com/kjgraves/NHLShakeItUp/blob/master/DataExploration.ipynb) (in progress)
 
 Finally!! We can actually look at the data now, and try to make some sense of it. Before I dive into any predictive analysis, I need to answer some of the basic questions:
+1. When do teams 'shake it up?' Doe certain teams do it more often?
 1. On average, does 'shaking it up' work?
-2. Does 'shaking it up' work better in certain situations?
+2. Does 'shaking it up' work better in certain situations or for certain teams?
 3. Is it detrimental in other situations?
-4. Which features exhibit the most information gain?
+
 
 ### Modeling (not begun)
 
 I plan to do all of my modeling, and show results in this notebook.
+
+Models Needed:
+* Prediction of W/L for a single game
 
 ## Disclaimer
 
